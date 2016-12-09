@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AWSLexPostContentRequest Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AWS Mobile SDK for iOS v2.4.15 </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Amazon Web Services, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/accept">accept</option>
+		
+		<option value="//api/name/botAlias">botAlias</option>
+		
+		<option value="//api/name/botName">botName</option>
+		
+		<option value="//api/name/contentType">contentType</option>
+		
+		<option value="//api/name/inputStream">inputStream</option>
+		
+		<option value="//api/name/sessionAttributes">sessionAttributes</option>
+		
+		<option value="//api/name/userId">userId</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AWSLexPostContentRequest Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>AWSRequest : AWSModel : AWSMTLModel</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AWSLexModel.h<br />AWSLexModel.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/accept" title="accept"></a>
+	<h3 class="method-title"><code><a href="#//api/name/accept">&nbsp;&nbsp;accept</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> You pass this value as the <code>Accept</code> HTTP header. </p>
+
+
+<p> The message Lex returns in the response can be either text or speech based on the <code>Accept</code> HTTP header value in the request. </p>
+
+
+<ul><li><p> If the value is <code>text/plain; charset=utf-8</code>, Lex returns text in the response. </p></li><li><p> If the value begins with <code>audio/</code>, the Lex returns a speech in the response. Lex uses Amazon Polly to generate the speech (using the configuration you specified in the <code>Accept</code> header). For example, if you specify <code>audio/mpeg</code> as the value, Lex returns speech in the MPEG format.</p><p>The following are the accepted values:</p><ul><li><p>audio/mpeg</p></li><li><p>audio/ogg</p></li><li><p>audio/pcm</p></li><li><p>text/plain; charset=utf-8</p></li><li><p>audio/* (defaults to mpeg)</p></li></ul></li></ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *accept</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/botAlias" title="botAlias"></a>
+	<h3 class="method-title"><code><a href="#//api/name/botAlias">&nbsp;&nbsp;botAlias</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Alias of the Lex bot.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *botAlias</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/botName" title="botName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/botName">&nbsp;&nbsp;botName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Name of the Lex bot.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *botName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/contentType" title="contentType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/contentType">&nbsp;&nbsp;contentType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> You pass this values as the <code>Content-Type</code> HTTP header. </p>
+
+
+<p> Indicates the audio format. The header value must start with one of the following prefixes: </p>
+
+
+<ul><li><p>audio/l16; rate=16000; channels=1</p></li><li><p>audio/x-l16; sample-rate=16000; channel-count=1</p></li><li><p>text/plain; charset=utf-8</p></li><li><p>audio/x-cbr-opus-with-preamble; preamble-size=0; bit-rate=1; frame-size-milliseconds=1.1</p></li></ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *contentType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/inputStream" title="inputStream"></a>
+	<h3 class="method-title"><code><a href="#//api/name/inputStream">&nbsp;&nbsp;inputStream</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> User input, in the format as described in the <code>Content-Type</code> HTTP header. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSInputStream *inputStream</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionAttributes" title="sessionAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionAttributes">&nbsp;&nbsp;sessionAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>You pass this value in the <code>x-amz-deep-sense-session-attributes</code> HTTP header. The value must be map (keys and values must be string) that is JSON serialized and then base64-encoded.</p>
+
+
+<p> A session represents dialog between a user and Amazon Lex. At runtime, a client application can pass contextual information (session attributes), in the request. For example, <code>"FirstName" : "Joe"</code>. </p>
+
+
+<p> Lex passes these session attributes to the Lambda functions configured for the intent (see <code>dialogCodeHook</code> and <code>fulfillmentActivity.codeHook</code> in ). In the Lambda function code, you can use the session attributes for customization. For example, </p>
+
+
+<ul><li><p> In a pizza ordering application, if you pass user location (for example, <code>"Location" : "some location"</code>) as a session attribute, your Lambda function might use this information to determine the closest pizzeria to place the order. </p></li><li><p> You might use session attribute information to personalize prompts. For example, suppose you pass in user name as a session attribute (<code>"FirstName" : "Joe"</code>). You might configure subsequent prompts to refer to this attribute, as <code>$session.FirstName"</code>. At runtime, Lex substitutes a real value in generating a prompt - "Hello Joe, what would you like to order?". </p></li></ul>
+
+
+<p><note><p> Amazon Lex does not persist session attributes. </p><p> If you have not configured a Lambda function to process an intent (that is, you want processing done on on the client), then Lex simply returns the session attributes back to the client application. </p><p> If you configured a Lambda function to process the intent, Lex passes the incoming session attributes to the Lambda function. The Lambda function must return these session attributes if you want Lex to return them back to client. </p></note></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userId" title="userId"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userId">&nbsp;&nbsp;userId</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>User ID of your client application. Typically you want each of your application users to have a unique ID. Note the following considerations: </p>
+
+
+<ul><li><p> If you want a user to start conversation on one mobile device and continue the conversation on another device, you might choose user-specific identifier, such as login, or Cognito user ID (assuming your application is using Amazon Cognito). </p></li><li><p> If you want the same user to be able to have two independent conversations on two different devices, you might choose device-specific identifier, such as device ID, or some globally unique identifier. </p></li></ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *userId</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Amazon Web Services, Inc. All rights reserved. Updated: 2016-12-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

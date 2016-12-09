@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AWSLexPostTextResponse Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AWS Mobile SDK for iOS v2.4.15 </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Amazon Web Services, Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/dialogState">dialogState</option>
+		
+		<option value="//api/name/intentName">intentName</option>
+		
+		<option value="//api/name/message">message</option>
+		
+		<option value="//api/name/responseCard">responseCard</option>
+		
+		<option value="//api/name/sessionAttributes">sessionAttributes</option>
+		
+		<option value="//api/name/slotToElicit">slotToElicit</option>
+		
+		<option value="//api/name/slots">slots</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AWSLexPostTextResponse Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>AWSModel : AWSMTLModel</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AWSLexModel.h<br />AWSLexModel.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dialogState" title="dialogState"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dialogState">&nbsp;&nbsp;dialogState</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Represents the message type to be conveyed to the user. For example, </p>
+
+
+<ul><li><p><code>ElicitIntent</code> - Lex wants to elicit user intent. For example, Lex did not understand the first utterances such as "I want to order pizza", which indicates the OrderPizza intent. But, if Lex did not understand the intent, it returns this <code>dialogState</code>. Another example is when your intent is configured with a follow up prompt. For example, after OrderPizza intent is fulfilled, the intent might have a follow up prompt -" Do you want to order a drink or desert". In this case, Lex returns this <code>dialogState</code>. </p></li><li><p><code>ConfirmIntent</code> - Lex is expecting a yes/no response from the user as to whether go ahead and fulfill the intent (for example, ok to go ahead and order the pizza). In addition to yes/no reply, user might provide respond with additional slot information (either new slot information or change existing slot values). For example, "Yes, but change to thick crust". Amazon Lex will understand the additional information and update the intent slots accordingly. </p><p> Consider another example. Before fulfilling an order, your application might prompt for confirmation - "Do you want to place this pizza order?". Instead, use might reply - "No, I want to order a drink". Lex recognizes the new intent "OrderDrink" intent. </p></li><li><p><code>ElicitSlot</code> - Lex is expecting a value of a slot for the current intent. For example, suppose Lex asks, "What size pizza would you like?". A user might reply - "Medium pepperoni pizza". Lex will recognize the size and the topping as the two separate slot values. </p></li><li><p><code>Fulfilled</code> - Conveys that the Lambda function has successfully fulfilled the intent. If Lambda function returns a statement/message to convey the fulfillment result, Lex passes this string to the client. If not, Lex looks for <code>conclusionStatement</code> that you configured for the intent. </p><p> If both the Lambda function statement and the <code>conclusionStatement</code> are missing, Lex throws a bad request exception. </p></li><li><p><code>ReadyForFulfillment</code> - conveys that the client has to do the fulfillment work for the intent. This is the case when the current intent is configured with <code>ReturnIntent</code> as the <code>fulfillmentActivity </code>, then Lex returns this state to client. </p></li><li><p><code>Failed</code> - Conversation with the user failed. Some of the reasons for this <code>dialogState</code> are: after the configured number of attempts the user didn't provide an appropriate response, or the Lambda function failed to fulfill an intent. </p></li></ul>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) AWSLexDialogState dialogState</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/intentName" title="intentName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/intentName">&nbsp;&nbsp;intentName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Intent Lex inferred from the user input text. This is one of the intents configured for the bot. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *intentName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/message" title="message"></a>
+	<h3 class="method-title"><code><a href="#//api/name/message">&nbsp;&nbsp;message</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> Prompt (or statement) to convey to the user. This is based on the application configuration and context. For example, if Lex did not understand the user intent, it sends the <code>clarificationPrompt</code> configured for the application. In another example, if the intent requires confirmation before taking the fulfillment action, it sends the <code>confirmationPrompt</code>. Suppose the Lambda function successfully fulfilled the intent, and sent a message to convey to the user. In that situation, Lex sends that message in the response. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *message</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/responseCard" title="responseCard"></a>
+	<h3 class="method-title"><code><a href="#//api/name/responseCard">&nbsp;&nbsp;responseCard</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Represents the options the user has to respond to the current prompt. Lex sends this in the response only if the <code>dialogState</code> value indicates that user response is expected. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AWSLexResponseCard *responseCard</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sessionAttributes" title="sessionAttributes"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sessionAttributes">&nbsp;&nbsp;sessionAttributes</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Map of key value pairs representing the session specific context information.</p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/slotToElicit" title="slotToElicit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/slotToElicit">&nbsp;&nbsp;slotToElicit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>If <code>dialogState</code> value is <code>ElicitSlot</code>, then this returns the name of the slot for which Lex is eliciting a value. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *slotToElicit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/slots" title="slots"></a>
+	<h3 class="method-title"><code><a href="#//api/name/slots">&nbsp;&nbsp;slots</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p> Intent slots (name/value pairs) Amazon Lex detected so far from the user input in the conversation. </p>
+
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *slots</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AWSLexModel.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2016 Amazon Web Services, Inc. All rights reserved. Updated: 2016-12-08</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AWSLex.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AWSLex</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Amazon Lex provides both build and run time endpoints. Each endpoint provides a set of operations (API). Your application uses the runtime API to understand user utterances (user input text or voice). For example, suppose user says &quot;I want pizza&quot;, your application sends this input to Amazon Lex using the runtime API. Amazon Lex recognizes user request is for &quot;OrderPizza&quot; intent (one of the intents defined in the application). The service then engages in user conversation on behalf of the application to to elicit required information (slot values, such as pizza size and crust type), and then performs fultillment activity (that you configured at the time of creating the application). You use the build-time API to create and manage your Amazon Lex applications. For a list of build-time operations, see . &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1282"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLex/setConfiguration:</TokenIdentifier>
+			<Abstract type="html">The service configuration used to instantiate this service client.</Abstract>
+			<DeclaredIn>AWSLexInteractionKit.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLex/configuration</TokenIdentifier>
+			<Abstract type="html">The service configuration used to instantiate this service client.</Abstract>
+			<DeclaredIn>AWSLexInteractionKit.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLex/configuration</TokenIdentifier>
+			<Abstract type="html">The service configuration used to instantiate this service client.</Abstract>
+			<DeclaredIn>AWSLexInteractionKit.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) AWSServiceConfiguration *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSLex/defaultLex</TokenIdentifier>
+			<Abstract type="html">Returns the singleton service client. If the singleton object does not exist, the SDK instantiates the default service client with defaultServiceConfiguration from [AWSServiceManager defaultServiceManager]. The reference to this object is maintained by the SDK, and you do not need to retain it manually.</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)defaultLex</Declaration>
+			
+			<ReturnValue><Abstract type="html">The default service client.</Abstract></ReturnValue>
+			<Anchor>//api/name/defaultLex</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSLex/registerLexWithConfiguration:forKey:</TokenIdentifier>
+			<Abstract type="html">Creates a service client with the given service configuration and registers it for the key.</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+			<Declaration>+ (void)registerLexWithConfiguration:(AWSServiceConfiguration *)configuration forKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">A service configuration object.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A string to identify the service client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerLexWithConfiguration:forKey:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSLex/LexForKey:</TokenIdentifier>
+			<Abstract type="html">Retrieves the service client associated with the key. You need to call + registerLexWithConfiguration:forKey: before invoking this method.</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)LexForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A string to identify the service client.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of the service client.</Abstract></ReturnValue>
+			<Anchor>//api/name/LexForKey:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AWSLex/removeLexForKey:</TokenIdentifier>
+			<Abstract type="html">Removes the service client associated with the key and release it.</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+			<Declaration>+ (void)removeLexForKey:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">A string to identify the service client.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeLexForKey:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLex/postContent:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Sends user input (speech or text), at runtime, to Amazon Lex. Lex uses the machine learning model (built for the specific application), to interpret user speech. &lt;/p&gt;&lt;note&gt;&lt;p&gt; When building Lex text bots, you can use the &lt;code&gt;PostText&lt;/code&gt; API, which supports response cards. When building Lex bots that communicate by speech alone or by speech and text both, you use the this API. &lt;/p&gt;&lt;/note&gt;&lt;p&gt; In response, Lex returns the next &lt;code&gt;message&lt;/code&gt; to convey to the user and the message type (&lt;code&gt;dialogState&lt;/code&gt;). Based on the user interaction context, Lex knows the message to return and the message type indicates whether to expect a user response for that message. For example, consider the following response messages: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&quot;What pizza toppings would you like?&quot; - For this message, the &lt;code&gt;dialogState&lt;/code&gt; would be &lt;code&gt;ElicitSlot&lt;/code&gt; (that is, user response is expected). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&quot;Your order has been placed.&quot; - For this message, Lex returns one of the following dialog states depending on how the fulfillment is configured for the intent (see &lt;code&gt;fulfillmentActivity&lt;/code&gt; in ). &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;FulFilled&lt;/code&gt; - If the intent &lt;code&gt;fulfillmentActivity&lt;/code&gt; is configured with a Lambda function to fulfill the intent. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfilment&lt;/code&gt; - If the intent&apos;s &lt;code&gt;fulfillmentActivity&lt;/code&gt; is configured to simply return the intent data back to the client application. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostContentRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostContentResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask&lt;AWSLexPostContentResponse*&gt; *)postContent:(AWSLexPostContentRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the PostContent service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSLexPostContentResponse. On failed execution, task.error may contain an NSError with AWSLexErrorDomain domain and the following error code: AWSLexErrorNotFound, AWSLexErrorBadRequest, AWSLexErrorLimitExceeded, AWSLexErrorInternalFailure, AWSLexErrorConflict, AWSLexErrorUnsupportedMediaType, AWSLexErrorNotAcceptable, AWSLexErrorRequestTimeout, AWSLexErrorDependencyFailed, AWSLexErrorBadGateway, AWSLexErrorLoopDetected.</Abstract></ReturnValue>
+			<Anchor>//api/name/postContent:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLex/postContent:completionHandler:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Sends user input (speech or text), at runtime, to Amazon Lex. Lex uses the machine learning model (built for the specific application), to interpret user speech. &lt;/p&gt;&lt;note&gt;&lt;p&gt; When building Lex text bots, you can use the &lt;code&gt;PostText&lt;/code&gt; API, which supports response cards. When building Lex bots that communicate by speech alone or by speech and text both, you use the this API. &lt;/p&gt;&lt;/note&gt;&lt;p&gt; In response, Lex returns the next &lt;code&gt;message&lt;/code&gt; to convey to the user and the message type (&lt;code&gt;dialogState&lt;/code&gt;). Based on the user interaction context, Lex knows the message to return and the message type indicates whether to expect a user response for that message. For example, consider the following response messages: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&quot;What pizza toppings would you like?&quot; - For this message, the &lt;code&gt;dialogState&lt;/code&gt; would be &lt;code&gt;ElicitSlot&lt;/code&gt; (that is, user response is expected). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&quot;Your order has been placed.&quot; - For this message, Lex returns one of the following dialog states depending on how the fulfillment is configured for the intent (see &lt;code&gt;fulfillmentActivity&lt;/code&gt; in ). &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;FulFilled&lt;/code&gt; - If the intent &lt;code&gt;fulfillmentActivity&lt;/code&gt; is configured with a Lambda function to fulfill the intent. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfilment&lt;/code&gt; - If the intent&apos;s &lt;code&gt;fulfillmentActivity&lt;/code&gt; is configured to simply return the intent data back to the client application. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostContentRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostContentResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)postContent:(AWSLexPostContentRequest *)request completionHandler:(void ( ^ _Nullable ) ( AWSLexPostContentResponse *_Nullable response , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the PostContent service method.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The completion handler to call when the load request is complete.
+                          response - A response object, or nil if the request failed.
+                          error - An error object that indicates why the request failed, or nil if the request was successful. On failed execution, error may contain an NSError with AWSLexErrorDomain domain and the following error code: AWSLexErrorNotFound, AWSLexErrorBadRequest, AWSLexErrorLimitExceeded, AWSLexErrorInternalFailure, AWSLexErrorConflict, AWSLexErrorUnsupportedMediaType, AWSLexErrorNotAcceptable, AWSLexErrorRequestTimeout, AWSLexErrorDependencyFailed, AWSLexErrorBadGateway, AWSLexErrorLoopDetected.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postContent:completionHandler:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLex/postText:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Sends user input text, at runtime, to Amazon Lex. Lex uses the machine learning model that the service built for the application to interpret user input. &lt;/p&gt;&lt;p&gt; In response, Lex returns the next message to convey to the user (based on the context of the user interaction) and whether to expect user response for the message (&lt;code&gt;dialogState&lt;/code&gt;). For example, consider the following response messages: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&quot;What pizza toppings would you like?&quot; - In this case, the &lt;code&gt;dialogState&lt;/code&gt; would be &lt;code&gt;ElicitSlot&lt;/code&gt; (that is, user response is expected). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&quot;Your order has been placed.&quot; - In this case, Lex returns one of the following &lt;code&gt;dialogState&lt;/code&gt; depending on how the intent fulfillment is configured (see &lt;code&gt;fulfillmentActivity&lt;/code&gt; in ). &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;FulFilled&lt;/code&gt; - If the intent fulfillment is configured through a Lambda function. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfilment&lt;/code&gt; if the intent&apos;s &lt;code&gt;fulfillmentActivity&lt;/code&gt; is to simply return the intent data back to the client application. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostTextRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostTextResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (AWSTask&lt;AWSLexPostTextResponse*&gt; *)postText:(AWSLexPostTextRequest *)request</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the PostText service method.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An instance of AWSTask. On successful execution, task.result will contain an instance of AWSLexPostTextResponse. On failed execution, task.error may contain an NSError with AWSLexErrorDomain domain and the following error code: AWSLexErrorNotFound, AWSLexErrorBadRequest, AWSLexErrorLimitExceeded, AWSLexErrorInternalFailure, AWSLexErrorConflict, AWSLexErrorDependencyFailed, AWSLexErrorBadGateway, AWSLexErrorLoopDetected.</Abstract></ReturnValue>
+			<Anchor>//api/name/postText:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLex/postText:completionHandler:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Sends user input text, at runtime, to Amazon Lex. Lex uses the machine learning model that the service built for the application to interpret user input. &lt;/p&gt;&lt;p&gt; In response, Lex returns the next message to convey to the user (based on the context of the user interaction) and whether to expect user response for the message (&lt;code&gt;dialogState&lt;/code&gt;). For example, consider the following response messages: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&quot;What pizza toppings would you like?&quot; - In this case, the &lt;code&gt;dialogState&lt;/code&gt; would be &lt;code&gt;ElicitSlot&lt;/code&gt; (that is, user response is expected). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&quot;Your order has been placed.&quot; - In this case, Lex returns one of the following &lt;code&gt;dialogState&lt;/code&gt; depending on how the intent fulfillment is configured (see &lt;code&gt;fulfillmentActivity&lt;/code&gt; in ). &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;FulFilled&lt;/code&gt; - If the intent fulfillment is configured through a Lambda function. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfilment&lt;/code&gt; if the intent&apos;s &lt;code&gt;fulfillmentActivity&lt;/code&gt; is to simply return the intent data back to the client application. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexService.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostTextRequest</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostTextResponse</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)postText:(AWSLexPostTextRequest *)request completionHandler:(void ( ^ _Nullable ) ( AWSLexPostTextResponse *_Nullable response , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">A container for the necessary parameters to execute the PostText service method.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">The completion handler to call when the load request is complete.
+                          response - A response object, or nil if the request failed.
+                          error - An error object that indicates why the request failed, or nil if the request was successful. On failed execution, error may contain an NSError with AWSLexErrorDomain domain and the following error code: AWSLexErrorNotFound, AWSLexErrorBadRequest, AWSLexErrorLimitExceeded, AWSLexErrorInternalFailure, AWSLexErrorConflict, AWSLexErrorDependencyFailed, AWSLexErrorBadGateway, AWSLexErrorLoopDetected.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/postText:completionHandler:</Anchor>
+            <NodeRef refid="1282"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

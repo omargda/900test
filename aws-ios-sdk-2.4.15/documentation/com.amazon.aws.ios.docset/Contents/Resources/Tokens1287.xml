@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AWSLexPostContentResponse.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostContentResponse</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1287"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setAudioStream:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Prompt (or statement) to convey to the user. This is based on the application configuration and context. For example, if Lex did not understand the user intent, it will send the clarificationPrompt configured for the application. If the intent requires confirmation before taking the fulfillment action, it will send the confirmationPrompt. Here is another example, suppose Lambda function successfully fulfilled the intent, and sent a message to convery to the user. Then Lex will send that message in the response. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSData *audioStream</Declaration>
+			
+			
+			<Anchor>//api/name/audioStream</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/audioStream</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Prompt (or statement) to convey to the user. This is based on the application configuration and context. For example, if Lex did not understand the user intent, it will send the clarificationPrompt configured for the application. If the intent requires confirmation before taking the fulfillment action, it will send the confirmationPrompt. Here is another example, suppose Lambda function successfully fulfilled the intent, and sent a message to convery to the user. Then Lex will send that message in the response. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSData *audioStream</Declaration>
+			
+			
+			<Anchor>//api/name/audioStream</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/audioStream</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Prompt (or statement) to convey to the user. This is based on the application configuration and context. For example, if Lex did not understand the user intent, it will send the clarificationPrompt configured for the application. If the intent requires confirmation before taking the fulfillment action, it will send the confirmationPrompt. Here is another example, suppose Lambda function successfully fulfilled the intent, and sent a message to convery to the user. Then Lex will send that message in the response. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSData *audioStream</Declaration>
+			
+			
+			<Anchor>//api/name/audioStream</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setContentType:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Content type as specified in the &lt;code&gt;Accept&lt;/code&gt; HTTP header in the request.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/contentType</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Content type as specified in the &lt;code&gt;Accept&lt;/code&gt; HTTP header in the request.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/contentType</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Content type as specified in the &lt;code&gt;Accept&lt;/code&gt; HTTP header in the request.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *contentType</Declaration>
+			
+			
+			<Anchor>//api/name/contentType</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setDialogState:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Represents the message type to be conveyed to the user. For example, &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ElicitIntent&lt;/code&gt; - Lex wants to elicit user intent. Consider the following examples: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Suppose Lex did not understand the first utterances. For example &quot;I want to order pizza&quot; (indicating OrderPizza intent). But, if Lex did not understand the user&apos;s input to determine the intent, the service returns this dialog state. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Suppose the intent is configured with a follow up prompt. For example, after the OrderPizza intent is fulfilled, the intent might have a follow up prompt -&quot; Do you want to order a drink or desert?&quot;. In this case, Lex returns this dialog state. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ConfirmIntent&lt;/code&gt; - Lex is expecting a yes/no response from the user as to whether go ahead and fulfill the intent (for example, ok to go ahead and order the pizza). &lt;/p&gt;&lt;note&gt;&lt;p&gt; In addition to yes/no reply, user might provide respond with additional slot information. It can be a new slot information or change in existing slot value. For example, user might reply - &quot;Yes, but change the crust to thick crust&quot;. Amazon Lex can understand the additional information and update the intent slots accordingly. &lt;/p&gt;&lt;p&gt; Consider another example. Before fulfilling an order, your application might prompt for confirmation - &quot;Ok to place this pizza order?&quot;. User might reply - &quot;No, I want to order a drink&quot;. In this case, Lex recognizes the new &quot;OrderDrink&quot; intent. &lt;/p&gt;&lt;/note&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ElicitSlot&lt;/code&gt; - Lex is expecting a value of a slot for the current intent. Suppose Lex asks, &quot;What size pizza would you like?&quot;. A user might reply - &quot;Medium&quot;, or &quot;Medium pepperoni pizza&quot;. Lex will recognize the size and the topping as the two separate slot values. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;Fulfilled&lt;/code&gt; - Conveys that the Lambda function has successfully fulfilled the intent. If Lambda function returns a statement/message to convey the fulfillment result, Lex will pass this string to the client. If not, Lex looks for &lt;code&gt;conclusionStatement&lt;/code&gt; that you configured for the intent. &lt;/p&gt;&lt;p&gt; If both the Lambda function statement and the &lt;code&gt;conclusionStatement&lt;/code&gt; are missing, Lex throws a bad request exception. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfillment&lt;/code&gt; - Conveys that the client has to do the fulfillment work for the intent (this is the case when the current intent has the &lt;code&gt;fulfillmentActivity &lt;/code&gt; configured as &lt;code&gt;ReturnIntent&lt;/code&gt;). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;Failed&lt;/code&gt; - Conversation with the user failed. Some of the reasons for this dialog state are: After the preconfigured number of attempts user did not provide appropriate response, or Lambda function failed to fulfill an intent. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AWSLexDialogState dialogState</Declaration>
+			
+			
+			<Anchor>//api/name/dialogState</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/dialogState</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Represents the message type to be conveyed to the user. For example, &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ElicitIntent&lt;/code&gt; - Lex wants to elicit user intent. Consider the following examples: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Suppose Lex did not understand the first utterances. For example &quot;I want to order pizza&quot; (indicating OrderPizza intent). But, if Lex did not understand the user&apos;s input to determine the intent, the service returns this dialog state. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Suppose the intent is configured with a follow up prompt. For example, after the OrderPizza intent is fulfilled, the intent might have a follow up prompt -&quot; Do you want to order a drink or desert?&quot;. In this case, Lex returns this dialog state. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ConfirmIntent&lt;/code&gt; - Lex is expecting a yes/no response from the user as to whether go ahead and fulfill the intent (for example, ok to go ahead and order the pizza). &lt;/p&gt;&lt;note&gt;&lt;p&gt; In addition to yes/no reply, user might provide respond with additional slot information. It can be a new slot information or change in existing slot value. For example, user might reply - &quot;Yes, but change the crust to thick crust&quot;. Amazon Lex can understand the additional information and update the intent slots accordingly. &lt;/p&gt;&lt;p&gt; Consider another example. Before fulfilling an order, your application might prompt for confirmation - &quot;Ok to place this pizza order?&quot;. User might reply - &quot;No, I want to order a drink&quot;. In this case, Lex recognizes the new &quot;OrderDrink&quot; intent. &lt;/p&gt;&lt;/note&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ElicitSlot&lt;/code&gt; - Lex is expecting a value of a slot for the current intent. Suppose Lex asks, &quot;What size pizza would you like?&quot;. A user might reply - &quot;Medium&quot;, or &quot;Medium pepperoni pizza&quot;. Lex will recognize the size and the topping as the two separate slot values. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;Fulfilled&lt;/code&gt; - Conveys that the Lambda function has successfully fulfilled the intent. If Lambda function returns a statement/message to convey the fulfillment result, Lex will pass this string to the client. If not, Lex looks for &lt;code&gt;conclusionStatement&lt;/code&gt; that you configured for the intent. &lt;/p&gt;&lt;p&gt; If both the Lambda function statement and the &lt;code&gt;conclusionStatement&lt;/code&gt; are missing, Lex throws a bad request exception. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfillment&lt;/code&gt; - Conveys that the client has to do the fulfillment work for the intent (this is the case when the current intent has the &lt;code&gt;fulfillmentActivity &lt;/code&gt; configured as &lt;code&gt;ReturnIntent&lt;/code&gt;). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;Failed&lt;/code&gt; - Conversation with the user failed. Some of the reasons for this dialog state are: After the preconfigured number of attempts user did not provide appropriate response, or Lambda function failed to fulfill an intent. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AWSLexDialogState dialogState</Declaration>
+			
+			
+			<Anchor>//api/name/dialogState</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/dialogState</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Represents the message type to be conveyed to the user. For example, &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ElicitIntent&lt;/code&gt; - Lex wants to elicit user intent. Consider the following examples: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Suppose Lex did not understand the first utterances. For example &quot;I want to order pizza&quot; (indicating OrderPizza intent). But, if Lex did not understand the user&apos;s input to determine the intent, the service returns this dialog state. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Suppose the intent is configured with a follow up prompt. For example, after the OrderPizza intent is fulfilled, the intent might have a follow up prompt -&quot; Do you want to order a drink or desert?&quot;. In this case, Lex returns this dialog state. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ConfirmIntent&lt;/code&gt; - Lex is expecting a yes/no response from the user as to whether go ahead and fulfill the intent (for example, ok to go ahead and order the pizza). &lt;/p&gt;&lt;note&gt;&lt;p&gt; In addition to yes/no reply, user might provide respond with additional slot information. It can be a new slot information or change in existing slot value. For example, user might reply - &quot;Yes, but change the crust to thick crust&quot;. Amazon Lex can understand the additional information and update the intent slots accordingly. &lt;/p&gt;&lt;p&gt; Consider another example. Before fulfilling an order, your application might prompt for confirmation - &quot;Ok to place this pizza order?&quot;. User might reply - &quot;No, I want to order a drink&quot;. In this case, Lex recognizes the new &quot;OrderDrink&quot; intent. &lt;/p&gt;&lt;/note&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ElicitSlot&lt;/code&gt; - Lex is expecting a value of a slot for the current intent. Suppose Lex asks, &quot;What size pizza would you like?&quot;. A user might reply - &quot;Medium&quot;, or &quot;Medium pepperoni pizza&quot;. Lex will recognize the size and the topping as the two separate slot values. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;Fulfilled&lt;/code&gt; - Conveys that the Lambda function has successfully fulfilled the intent. If Lambda function returns a statement/message to convey the fulfillment result, Lex will pass this string to the client. If not, Lex looks for &lt;code&gt;conclusionStatement&lt;/code&gt; that you configured for the intent. &lt;/p&gt;&lt;p&gt; If both the Lambda function statement and the &lt;code&gt;conclusionStatement&lt;/code&gt; are missing, Lex throws a bad request exception. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;ReadyForFulfillment&lt;/code&gt; - Conveys that the client has to do the fulfillment work for the intent (this is the case when the current intent has the &lt;code&gt;fulfillmentActivity &lt;/code&gt; configured as &lt;code&gt;ReturnIntent&lt;/code&gt;). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;code&gt;Failed&lt;/code&gt; - Conversation with the user failed. Some of the reasons for this dialog state are: After the preconfigured number of attempts user did not provide appropriate response, or Lambda function failed to fulfill an intent. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AWSLexDialogState dialogState</Declaration>
+			
+			
+			<Anchor>//api/name/dialogState</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setIntentName:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Name of the intent.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *intentName</Declaration>
+			
+			
+			<Anchor>//api/name/intentName</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/intentName</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Name of the intent.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *intentName</Declaration>
+			
+			
+			<Anchor>//api/name/intentName</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/intentName</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Name of the intent.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *intentName</Declaration>
+			
+			
+			<Anchor>//api/name/intentName</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setMessage:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt; Based on the build-time application configuration, Amazon Lex determines the prompt (or statement) to convey to the user. If your application uses a Lambda function, then it can determine what prompt (or statement) to convey to the user. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/message</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt; Based on the build-time application configuration, Amazon Lex determines the prompt (or statement) to convey to the user. If your application uses a Lambda function, then it can determine what prompt (or statement) to convey to the user. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/message</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt; Based on the build-time application configuration, Amazon Lex determines the prompt (or statement) to convey to the user. If your application uses a Lambda function, then it can determine what prompt (or statement) to convey to the user. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *message</Declaration>
+			
+			
+			<Anchor>//api/name/message</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setSessionAttributes:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;JSON serialized and then base64-encoded map of key value pairs representing the session specific context information. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/sessionAttributes</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/sessionAttributes</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;JSON serialized and then base64-encoded map of key value pairs representing the session specific context information. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/sessionAttributes</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/sessionAttributes</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;JSON serialized and then base64-encoded map of key value pairs representing the session specific context information. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/sessionAttributes</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setSlotToElicit:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;If &lt;code&gt;dialogState&lt;/code&gt; value is &lt;code&gt;ElicitSlot&lt;/code&gt;, then this returns the name of the slot for which Lex is eliciting a value. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *slotToElicit</Declaration>
+			
+			
+			<Anchor>//api/name/slotToElicit</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/slotToElicit</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;If &lt;code&gt;dialogState&lt;/code&gt; value is &lt;code&gt;ElicitSlot&lt;/code&gt;, then this returns the name of the slot for which Lex is eliciting a value. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *slotToElicit</Declaration>
+			
+			
+			<Anchor>//api/name/slotToElicit</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/slotToElicit</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;If &lt;code&gt;dialogState&lt;/code&gt; value is &lt;code&gt;ElicitSlot&lt;/code&gt;, then this returns the name of the slot for which Lex is eliciting a value. &lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *slotToElicit</Declaration>
+			
+			
+			<Anchor>//api/name/slotToElicit</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/setSlots:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Map of zero or more intent slots (name/value pairs) Amazon Lex detected from the user input during the conversation.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *slots</Declaration>
+			
+			
+			<Anchor>//api/name/slots</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostContentResponse/slots</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Map of zero or more intent slots (name/value pairs) Amazon Lex detected from the user input during the conversation.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *slots</Declaration>
+			
+			
+			<Anchor>//api/name/slots</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostContentResponse/slots</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Map of zero or more intent slots (name/value pairs) Amazon Lex detected from the user input during the conversation.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *slots</Declaration>
+			
+			
+			<Anchor>//api/name/slots</Anchor>
+            <NodeRef refid="1287"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

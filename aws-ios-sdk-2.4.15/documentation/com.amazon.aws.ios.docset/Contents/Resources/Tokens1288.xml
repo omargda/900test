@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AWSLexPostTextRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AWSLexPostTextRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1288"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/setBotAlias:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Alias of the Lex bot.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *botAlias</Declaration>
+			
+			
+			<Anchor>//api/name/botAlias</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/botAlias</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Alias of the Lex bot.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *botAlias</Declaration>
+			
+			
+			<Anchor>//api/name/botAlias</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostTextRequest/botAlias</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Alias of the Lex bot.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *botAlias</Declaration>
+			
+			
+			<Anchor>//api/name/botAlias</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/setBotName:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Name of the Lex bot.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *botName</Declaration>
+			
+			
+			<Anchor>//api/name/botName</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/botName</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Name of the Lex bot.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *botName</Declaration>
+			
+			
+			<Anchor>//api/name/botName</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostTextRequest/botName</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Name of the Lex bot.&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *botName</Declaration>
+			
+			
+			<Anchor>//api/name/botName</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/setInputText:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Text user entered (Lex interprets this text).&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *inputText</Declaration>
+			
+			
+			<Anchor>//api/name/inputText</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/inputText</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Text user entered (Lex interprets this text).&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *inputText</Declaration>
+			
+			
+			<Anchor>//api/name/inputText</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostTextRequest/inputText</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;Text user entered (Lex interprets this text).&lt;/p&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *inputText</Declaration>
+			
+			
+			<Anchor>//api/name/inputText</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/setSessionAttributes:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt; A session represents dialog between a user and Amazon Lex. At runtime, a client application can pass contextual information (session attributes), in the request. For example, &lt;code&gt;&quot;FirstName&quot; : &quot;Joe&quot;&lt;/code&gt;. Lex passes these session attributes to the Lambda function(s) configured for the intent (see &lt;code&gt;dialogCodeHook&lt;/code&gt; and &lt;code&gt;fulfillmentActivity.codeHook&lt;/code&gt; in ). &lt;/p&gt;&lt;p&gt;In your Lambda function, you can use the session attributes for customization. Some examples are:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt; In a pizza ordering application, if you can pass user location as a session attribute (for example, &lt;code&gt;&quot;Location&quot; : &quot;111 Maple street&quot;&lt;/code&gt;), your Lambda function might use this information to determine the closest pizzeria to place the order. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Use session attributes to personalize prompts. For example, you pass in user name as a session attribute (&lt;code&gt;&quot;FirstName&quot; : &quot;Joe&quot;&lt;/code&gt;), you might configure subsequent prompts to refer to this attribute, as &lt;code&gt;$session.FirstName&quot;&lt;/code&gt;. At runtime, Lex will then substitute a real value in generating a prompt - &quot;Hello Joe, what would you like to order?&quot;. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;note&gt;&lt;p&gt; Amazon Lex does not persist session attributes. &lt;/p&gt;&lt;p&gt; If the intent is configured without a Lambda function to process the intent (that is, the client application to process the intent), Lex simply returns the session attributes back to the client application. &lt;/p&gt;&lt;p&gt; If the intent is configured with a Lambda function to process the intent, Lex passes the incoming session attributes to the Lambda function. The Lambda function must return these session attributes if you want Lex to return them back to the client. &lt;/p&gt;&lt;/note&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/sessionAttributes</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/sessionAttributes</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt; A session represents dialog between a user and Amazon Lex. At runtime, a client application can pass contextual information (session attributes), in the request. For example, &lt;code&gt;&quot;FirstName&quot; : &quot;Joe&quot;&lt;/code&gt;. Lex passes these session attributes to the Lambda function(s) configured for the intent (see &lt;code&gt;dialogCodeHook&lt;/code&gt; and &lt;code&gt;fulfillmentActivity.codeHook&lt;/code&gt; in ). &lt;/p&gt;&lt;p&gt;In your Lambda function, you can use the session attributes for customization. Some examples are:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt; In a pizza ordering application, if you can pass user location as a session attribute (for example, &lt;code&gt;&quot;Location&quot; : &quot;111 Maple street&quot;&lt;/code&gt;), your Lambda function might use this information to determine the closest pizzeria to place the order. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Use session attributes to personalize prompts. For example, you pass in user name as a session attribute (&lt;code&gt;&quot;FirstName&quot; : &quot;Joe&quot;&lt;/code&gt;), you might configure subsequent prompts to refer to this attribute, as &lt;code&gt;$session.FirstName&quot;&lt;/code&gt;. At runtime, Lex will then substitute a real value in generating a prompt - &quot;Hello Joe, what would you like to order?&quot;. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;note&gt;&lt;p&gt; Amazon Lex does not persist session attributes. &lt;/p&gt;&lt;p&gt; If the intent is configured without a Lambda function to process the intent (that is, the client application to process the intent), Lex simply returns the session attributes back to the client application. &lt;/p&gt;&lt;p&gt; If the intent is configured with a Lambda function to process the intent, Lex passes the incoming session attributes to the Lambda function. The Lambda function must return these session attributes if you want Lex to return them back to the client. &lt;/p&gt;&lt;/note&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/sessionAttributes</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostTextRequest/sessionAttributes</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt; A session represents dialog between a user and Amazon Lex. At runtime, a client application can pass contextual information (session attributes), in the request. For example, &lt;code&gt;&quot;FirstName&quot; : &quot;Joe&quot;&lt;/code&gt;. Lex passes these session attributes to the Lambda function(s) configured for the intent (see &lt;code&gt;dialogCodeHook&lt;/code&gt; and &lt;code&gt;fulfillmentActivity.codeHook&lt;/code&gt; in ). &lt;/p&gt;&lt;p&gt;In your Lambda function, you can use the session attributes for customization. Some examples are:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt; In a pizza ordering application, if you can pass user location as a session attribute (for example, &lt;code&gt;&quot;Location&quot; : &quot;111 Maple street&quot;&lt;/code&gt;), your Lambda function might use this information to determine the closest pizzeria to place the order. &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; Use session attributes to personalize prompts. For example, you pass in user name as a session attribute (&lt;code&gt;&quot;FirstName&quot; : &quot;Joe&quot;&lt;/code&gt;), you might configure subsequent prompts to refer to this attribute, as &lt;code&gt;$session.FirstName&quot;&lt;/code&gt;. At runtime, Lex will then substitute a real value in generating a prompt - &quot;Hello Joe, what would you like to order?&quot;. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;note&gt;&lt;p&gt; Amazon Lex does not persist session attributes. &lt;/p&gt;&lt;p&gt; If the intent is configured without a Lambda function to process the intent (that is, the client application to process the intent), Lex simply returns the session attributes back to the client application. &lt;/p&gt;&lt;p&gt; If the intent is configured with a Lambda function to process the intent, Lex passes the incoming session attributes to the Lambda function. The Lambda function must return these session attributes if you want Lex to return them back to the client. &lt;/p&gt;&lt;/note&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary&lt;NSString*NSString*&gt; *sessionAttributes</Declaration>
+			
+			
+			<Anchor>//api/name/sessionAttributes</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/setUserId:</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;User ID of your client application. Typically you want each of your application users to have a unique ID. Note the following considerations: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt; If you want a user to start conversation on one mobile device and continue the conversation on another device, you might choose user-specific identifier, such as login, or Cognito user ID (assuming your application is using Amazon Cognito). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; If you want the same user to be able to have two independent conversations on two different devices, you might choose device-specific identifier, such as device ID, or some globally unique identifier. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AWSLexPostTextRequest/userId</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;User ID of your client application. Typically you want each of your application users to have a unique ID. Note the following considerations: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt; If you want a user to start conversation on one mobile device and continue the conversation on another device, you might choose user-specific identifier, such as login, or Cognito user ID (assuming your application is using Amazon Cognito). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; If you want the same user to be able to have two independent conversations on two different devices, you might choose device-specific identifier, such as device ID, or some globally unique identifier. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AWSLexPostTextRequest/userId</TokenIdentifier>
+			<Abstract type="html">&lt;p&gt;User ID of your client application. Typically you want each of your application users to have a unique ID. Note the following considerations: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt; If you want a user to start conversation on one mobile device and continue the conversation on another device, you might choose user-specific identifier, such as login, or Cognito user ID (assuming your application is using Amazon Cognito). &lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt; If you want the same user to be able to have two independent conversations on two different devices, you might choose device-specific identifier, such as device ID, or some globally unique identifier. &lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</Abstract>
+			<DeclaredIn>AWSLexModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+            <NodeRef refid="1288"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
